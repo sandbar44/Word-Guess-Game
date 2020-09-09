@@ -1,15 +1,4 @@
-
-// Variables
-//     X Game word list
-//     X Chosen word
-//     - Win tracker
-//     - User guess
-//     - Guess tracker
-//     - All past guesses
-
-// Functions
-//     - User presses key
-//     - Update score
+// WORD GUESS GAME
 
 // VARIABLES
 // ==========================================================================
@@ -17,7 +6,7 @@
 // Game word list
 var wordList = [
     { name: "bridezilla", image: "bridezilla.jpg", quote: "MY DAY MUST BE PERFECT!" },
-    { name: "tuxedo", image: "tuxedo.png", quote: "Lookin' sharp!"},
+    { name: "tuxedo", image: "tuxedo.png", quote: "Lookin' sharp!" },
     { name: "church", image: "church.jpg", quote: "Do you hear the bells ringing?" },
     { name: "reception", image: "reception.jpg", quote: "Open bar, anyone?" },
     { name: "engagement", image: "engagement.jpg", quote: "Did she say yes?" },
@@ -83,7 +72,7 @@ function chooseWord() {
     // Add to game div on the page ("#game").
     gameDiv.innerText = wordArray.join(" ");
     // Update image to match word
-    imagesDiv.innerHTML = "<img src='assets/images/"+chosenWord.image+"' class='img-fluid'>";
+    imagesDiv.innerHTML = "<img src='assets/images/" + chosenWord.image + "' class='img-fluid'>";
     // Update quote to match word
     quotesDiv.innerHTML = chosenWord.quote;
 }
@@ -123,12 +112,12 @@ function sound(src) {
     this.sound.setAttribute("controls", "none");
     this.sound.style.display = "none";
     document.body.appendChild(this.sound);
-    this.play = function(){
+    this.play = function () {
         this.sound.play();
     }
-    this.stop = function(){
+    this.stop = function () {
         this.sound.pause();
-    }    
+    }
 }
 
 // This function executes lose events
