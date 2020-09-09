@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Words</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GUESS THE WEDDING WORDS</h1>
+    </header>
+
+    <main class="container">
+        <section class="row">
+            <div class="col-sm-12 col-md-12 main-section">
+                <!-- Fun Quote Above Content -->
+                <div class="col-sm-12 col-md-12 upper">
+                    <div id="quotes"></div><!-- Placeholder dynamic text -->
+                </div>
+            </div>
+        </section>
+        <section class="row">
+            <!-- Left Column -->
+            <div class="col-sm-6 col-md-6 left">
+                <div id="images"></div> <!-- Placeholder dynamic images-->
+            </div>
+            <!-- Right Column -->
+            <div class="col-sm-6 col-md-6 right">
+                <p>Press any key to get started!</p>
+                <p>Wins</p>
+                <div id="wins">0</div><!-- Placeholder dynamic text -->
+                <p>Current Word</p>
+                <div id="game"></div><!-- Placeholder dynamic text -->
+                <p>Number of Guesses Remaining</p>
+                <div id="guessCount">13</div> <!-- Placeholder dynamic text -->
+                <p>Letters Already Guessed</p>
+                <div id="letters"></div> <!-- Placeholder dynamic text -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 
+    PSUEDO CODE
+    X Layout
+        Create header
+        Left side images
+        Right side game
+
+    Content
+        Dynamic fun quote
+        X Instructions text: Press any key to get started
+        X Track wins
+        X Game text: Current Word with _ _ _ _ _
+        X Pick a random word
+        X Display same amount of _ as letters in word
+        X Number of guesses remaining #
+        X - Start at 13 guesses 
+        X - Decrease count for each INCORRECT guess 
+        X - Do not decrease if letter was already guessed
+        X Track letters already guessed
+        X - Display letters that are GUESSED AND INCORRECT
+        X - Do not display duplicate letters 
+        X Events when round ends
+        X Round ends when word is guessed or guess count reaches 0
+        X Update picture
+        X Play sound
+        X Display/update fun quote above
+        X - Pick new word 
+        X - Ensure word has not been picked yet!
+        X - If word is guessed and guess count > 0, then increase win counter 
+        X - Reset remaining guesses
+        X - Reset guessed letters 
+
+    X Variables
+    - Game word library
+    - Chosen word
+    - Win tracker
+    - User guess
+    - Guess tracker
+    - All past guesses
+    
+-->
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom Javascript for game-->
+    <script src="assets/javascript/game.js"></script>
+
+
+</body>
+
+</html>
